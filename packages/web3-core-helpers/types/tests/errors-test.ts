@@ -42,3 +42,6 @@ errors.RevertInstructionError('reason', 'signature');
 
 // $ExpectType TransactionRevertInstructionError
 errors.TransactionRevertInstructionError('reason', 'signature', {});
+
+// $ExpectType Error
+errors.ResolverMethodMissingError('0x0000000000000000000000000000000000000001', 'content');
